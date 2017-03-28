@@ -1,0 +1,30 @@
+PODS:
+  - Agrume (3.1.1)
+  - Alamofire (4.4.0)
+  - Kingfisher (3.6.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Agrume (from `https://github.com/wsjnohyeah/Agrume.git`)
+  - Alamofire (~> 4.4)
+  - Kingfisher (~> 3.0)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Agrume:
+    :git: https://github.com/wsjnohyeah/Agrume.git
+
+CHECKOUT OPTIONS:
+  Agrume:
+    :commit: 48fd450c81045ff0901b4bc89393d214c629614b
+    :git: https://github.com/wsjnohyeah/Agrume.git
+
+SPEC CHECKSUMS:
+  Agrume: d7f80bd3931cd2cb9488546089bab696ffca4118
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Kingfisher: 300035f9a40634dc9b452d946c9f22250688fecd
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 69d444b0b869a92f692f803ae9e46e61dba5b7af
+
+COCOAPODS: 1.2.0

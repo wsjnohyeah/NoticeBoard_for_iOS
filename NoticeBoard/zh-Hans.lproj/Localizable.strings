@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  NoticeBoard
+
+  Created by Ethan Hu on 27/03/2017.
+  Copyright © 2017 Ethan Hu. All rights reserved.
+*/
+"save-to-local" = "保存";
+"cancel" = "取消";
