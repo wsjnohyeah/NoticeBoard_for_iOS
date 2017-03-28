@@ -18,11 +18,58 @@ class IndividualPostViewController: UIViewController, UIWebViewDelegate{
     var postId:String!
     let individualPostAPIURLAddress = "https://hfi.me/api/post/id/"
     
+    
+    private func createShareButton() {
+        let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareButtonAction))
+        self.navigationItem.rightBarButtonItem = shareButton
+    }
+    
+    func shareButtonAction(){
+        if let shareURL = URL(string: individualPostAPIURLAddress + postId) {
+            let shareActionSheetController = UIActivityViewController(activityItems: [shareURL], applicationActivities: [openInSafariShareButton()])
+            shareActionSheetController.popoverPresentationController?.sourceView = self.view
+            self.present(shareActionSheetController, animated: true, completion: nil)
+        }
+    }
+    
+    private class openInSafariShareButton:UIActivity {
+        
+        override var activityType: UIActivityType? {
+            return UIActivityType(rawValue: "NoticeBoardPostOpenInSafari")
+        }
+        override var activityTitle: String? {
+            return "Open in Safari"
+        }
+        
+        override var activityImage: UIImage? {
+            return #imageLiteral(resourceName: "discoverSectionIcon")
+        }
+        
+        override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
+            for item in activityItems {
+                if let _ = item as? URL {
+                    return true
+                }
+            }
+            return false
+        }
+        
+        override func prepare(withActivityItems activityItems: [Any]) {
+            for item in activityItems {
+                if let url = item as? URL {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         postWebView.delegate = self
         postWebView.scrollView.isScrollEnabled = true
         postWebView.loadRequest(URLRequest(url: URL(string: individualPostAPIURLAddress + postId)!))
+        createShareButton()
     }
     
     func webViewDidStartLoad(_ webView: UIWebView) {
@@ -46,7 +93,14 @@ class IndividualPostViewController: UIViewController, UIWebViewDelegate{
                     imagePanel.showFrom(self)
                 }
             }
+            return false
         }
+        
+        if let url = request.url, navigationType == UIWebViewNavigationType.linkClicked {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            return false
+        }
+        
         return true
     }
     
