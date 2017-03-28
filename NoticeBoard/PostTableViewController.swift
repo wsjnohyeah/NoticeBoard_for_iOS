@@ -92,6 +92,7 @@ class PostTableViewController: UITableViewController {
         if let sourcePostTableViewCell = sender as? PostTableViewCell {
             if let destinationIndividualPostViewController = segue.destination as? IndividualPostViewController {
                 destinationIndividualPostViewController.postId = sourcePostTableViewCell.id
+                destinationIndividualPostViewController.navigationItem.title = "Post"
             }
         }
     }

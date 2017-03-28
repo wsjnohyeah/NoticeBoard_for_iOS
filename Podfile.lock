@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Agrume:
-    :commit: 48fd450c81045ff0901b4bc89393d214c629614b
+    :commit: d35895b5f276ba04eab6bb25a813027f5adc7dac
     :git: https://github.com/wsjnohyeah/Agrume.git
 
 SPEC CHECKSUMS:

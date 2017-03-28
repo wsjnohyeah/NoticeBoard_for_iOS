@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		507F920DC1948A6320EDB0FD /* Pods_NoticeBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2DECDC0CE006592D634841 /* Pods_NoticeBoard.framework */; };
+		AA0447161E8A894D0034658E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0447151E8A894D0034658E /* LaunchScreen.storyboard */; };
 		AA81F44B1E895A5300C0B126 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA81F44D1E895A5300C0B126 /* Localizable.strings */; };
 		AACA38F51E8833BA00A76820 /* IndividualPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACA38F41E8833BA00A76820 /* IndividualPostViewController.swift */; };
 		AACB55F41E86623000736E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB55F31E86623000736E95 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		3A2DECDC0CE006592D634841 /* Pods_NoticeBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoticeBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D8751E86E981FB87745AE4 /* Pods-NoticeBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoticeBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoticeBoard/Pods-NoticeBoard.release.xcconfig"; sourceTree = "<group>"; };
 		7DBFF499F59AF5C49027330E /* Pods-NoticeBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoticeBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoticeBoard/Pods-NoticeBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		AA0447151E8A894D0034658E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA81F4531E895B1C00C0B126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA81F4541E895B2100C0B126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AA81F4551E895B3500C0B126 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				AACB55F71E86623000736E95 /* Main.storyboard */,
 				AACB55F51E86623000736E95 /* PostTableViewController.swift */,
 				AACA38F41E8833BA00A76820 /* IndividualPostViewController.swift */,
+				AA0447151E8A894D0034658E /* LaunchScreen.storyboard */,
 				AADA48901E86C32B006A1E03 /* PostTableViewCell.swift */,
 				AADA48931E86C905006A1E03 /* Post.swift */,
 				AACB55FA1E86623000736E95 /* NoticeBoard.xcdatamodeld */,
@@ -176,6 +179,7 @@
 			files = (
 				AA81F44B1E895A5300C0B126 /* Localizable.strings in Resources */,
 				AACB55FE1E86623100736E95 /* Assets.xcassets in Resources */,
+				AA0447161E8A894D0034658E /* LaunchScreen.storyboard in Resources */,
 				AACB55F91E86623000736E95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
